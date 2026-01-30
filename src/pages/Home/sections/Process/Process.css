@@ -1,49 +1,47 @@
 /* Process Section */
 .process {
   position: relative;
-  background: linear-gradient(90deg, #262626 0%, #262626 100%);
+  background: #262626;
   padding: 120px 84px;
+  overflow: hidden;
 }
 
-/* Conic Gradient Background */
+/* Conic Gradient Background Effect */
 .process::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(90deg);
-  width: 318.52px;
-  height: 318.52px;
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -50%) rotate(45deg);
   background: conic-gradient(
     from 90deg,
-    rgb(8, 11, 24) -7.2115%,
-    rgb(26, 10, 43) 0.82929%,
-    rgb(43, 8, 62) 8.8701%,
-    rgb(78, 6, 100) 24.952%,
-    rgb(71, 18, 109) 28.068%,
-    rgb(64, 31, 119) 31.184%,
-    rgb(50, 56, 138) 37.416%,
-    rgb(36, 80, 157) 43.648%,
-    rgb(22, 105, 176) 49.88%,
-    rgb(46, 116, 191) 52.985%,
-    rgb(70, 128, 207) 56.09%,
-    rgb(118, 150, 238) 62.299%,
-    rgb(122, 183, 239) 73.077%,
-    rgb(159, 180, 240) 77.404%,
-    rgb(195, 177, 240) 81.731%,
-    rgb(148, 136, 186) 84.495%,
-    rgb(102, 94, 132) 87.26%,
-    rgb(78, 73, 105) 88.642%,
-    rgb(55, 53, 78) 90.024%,
-    rgb(32, 32, 51) 91.406%,
-    rgb(20, 21, 37) 92.097%,
-    rgb(8, 11, 24) 92.788%,
-    rgb(26, 10, 43) 100.83%,
-    rgb(43, 8, 62) 108.87%,
-    rgb(78, 6, 100) 124.95%
+    rgb(8, 11, 24) 0%,
+    rgb(26, 10, 43) 5%,
+    rgb(43, 8, 62) 10%,
+    rgb(78, 6, 100) 20%,
+    rgb(71, 18, 109) 25%,
+    rgb(64, 31, 119) 30%,
+    rgb(50, 56, 138) 35%,
+    rgb(36, 80, 157) 40%,
+    rgb(22, 105, 176) 45%,
+    rgb(46, 116, 191) 50%,
+    rgb(70, 128, 207) 55%,
+    rgb(118, 150, 238) 60%,
+    rgb(122, 183, 239) 70%,
+    rgb(159, 180, 240) 75%,
+    rgb(195, 177, 240) 80%,
+    rgb(148, 136, 186) 85%,
+    rgb(102, 94, 132) 87%,
+    rgb(78, 73, 105) 89%,
+    rgb(55, 53, 78) 91%,
+    rgb(32, 32, 51) 93%,
+    rgb(20, 21, 37) 95%,
+    rgb(8, 11, 24) 100%
   );
-  filter: blur(80px);
-  opacity: 0.8;
+  filter: blur(150px);
+  opacity: 0.9;
   z-index: 0;
   pointer-events: none;
 }
@@ -53,7 +51,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 80px;
   position: relative;
   z-index: 1;
 }
@@ -96,6 +94,8 @@
   justify-items: start;
   line-height: 0;
   position: relative;
+  min-height: 540px;
+  width: 1272px;
 }
 
 /* Card Base */

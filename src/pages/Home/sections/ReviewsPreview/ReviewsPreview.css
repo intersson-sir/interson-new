@@ -2,7 +2,7 @@
 .reviews-preview {
   position: relative;
   background-color: #0d0d0d;
-  padding: 100px 0;
+  padding: 60px 0 100px 0;
 }
 
 .reviews-preview__container {
@@ -46,7 +46,7 @@
 .reviews-preview__projects {
   display: flex;
   flex-direction: column;
-  gap: 337px; /* Gap between first project and row */
+  gap: 220px; /* Gap between first project and row */
 }
 
 /* Projects Row (YSV + WP NFT) */

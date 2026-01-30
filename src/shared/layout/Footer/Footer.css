@@ -12,6 +12,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
 }
 
 /* Main Content: CTA + Footer Info */
@@ -150,29 +151,13 @@
 }
 
 .footer__logo {
-  display: grid;
-  grid-template-columns: max-content;
-  grid-template-rows: max-content;
-  align-items: start;
-  justify-items: start;
+  display: flex;
+  align-items: center;
   line-height: 0;
   position: relative;
 }
 
-.footer__logo-icon {
-  width: 27px;
-  height: 28px;
-  grid-column: 1;
-  grid-row: 1;
-  margin-left: 0;
-  margin-top: 0.87px;
-}
-
 .footer__logo-text {
-  grid-column: 1;
-  grid-row: 1;
-  margin-left: 36px;
-  margin-top: 0;
   font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 600;

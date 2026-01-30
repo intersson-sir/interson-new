@@ -44,11 +44,6 @@ function Footer() {
             {/* Logo & Social */}
             <div className="footer__header">
               <div className="footer__logo">
-                <img
-                  src="https://www.figma.com/api/mcp/asset/fb48195f-1503-4ac3-badf-cd344678a707"
-                  alt=""
-                  className="footer__logo-icon"
-                />
                 <span className="footer__logo-text">INTERSSON</span>
               </div>
               <div className="footer__social">

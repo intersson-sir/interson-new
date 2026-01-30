@@ -145,8 +145,9 @@
   left: 0;
   right: 0;
   top: 583px;
-  width: 100%;
+  width: 100vw;
   height: 461px;
+  margin-left: calc(-50vw + 50%);
 }
 
 .hero__image-laptop {
@@ -184,9 +185,9 @@
   }
 
   .hero__image {
-    width: 90%;
-    max-width: 1458px;
+    width: 100vw;
     height: auto;
+    margin-left: calc(-50vw + 50%);
   }
 }
 

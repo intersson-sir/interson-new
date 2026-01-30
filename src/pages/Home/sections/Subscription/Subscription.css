@@ -1,0 +1,473 @@
+/* Subscription Section */
+.subscription {
+  position: relative;
+  background-color: #0d0d0d;
+  padding: 100px 0;
+}
+
+.subscription__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 88px;
+  position: relative;
+  min-height: 1215px;
+}
+
+/* Badge */
+.subscription__badge {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 194px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 99px;
+  padding: 6px 13px;
+  height: 27px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscription__badge span {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  line-height: 1;
+}
+
+/* Title */
+.subscription__title {
+  position: absolute;
+  left: 34px;
+  top: 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -3.2px;
+  color: #ffffff;
+  width: 796px;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* Subtitle */
+.subscription__subtitle {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 249px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #99a1af;
+  text-align: center;
+  width: 414px;
+  margin: 0;
+}
+
+/* Pricing Cards */
+.subscription__cards {
+  position: absolute;
+  top: 322px;
+  left: 20px;
+  right: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Individual Card */
+.subscription__card {
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 32px;
+  position: relative;
+  height: 812px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Popular Card */
+.subscription__card--popular {
+  background-image: radial-gradient(
+    ellipse 399.67px 812.19px at 199.84px 0px,
+    rgba(30, 20, 50, 0.8) 0%,
+    rgba(20, 15, 30, 0.8) 50%,
+    rgba(10, 10, 10, 0.8) 100%
+  );
+  border-color: #d42ec6;
+  box-shadow: 0px 0px 40px 0px rgba(212, 46, 198, 0.1);
+}
+
+/* Popular Card - Override Positions */
+.subscription__card--popular .subscription__card-description {
+  top: 108.5px;
+  height: 17px;
+  line-height: 19.6px;
+  width: 304px;
+}
+
+.subscription__card--popular .subscription__card-price {
+  top: 194.1px;
+}
+
+.subscription__card--popular .subscription__card-period {
+  top: 205.6px;
+  left: 147.67px;
+}
+
+.subscription__card--popular .subscription__card-buyout {
+  top: 231.6px;
+}
+
+.subscription__card--popular .subscription__card-features {
+  top: 280.6px;
+}
+
+/* Enterprise Card - Specific period position */
+.subscription__card:last-child .subscription__card-period {
+  left: 159.44px;
+}
+
+/* Popular Badge */
+.subscription__card-badge {
+  position: absolute;
+  left: calc(32.72% - 0.35px);
+  right: calc(32.73% - 0.35px);
+  top: -12px;
+  background: linear-gradient(92.36deg, rgb(255, 59, 255) 0%, rgb(92, 36, 255) 100%);
+  border-radius: 99px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.subscription__card-badge svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+/* Card Name */
+.subscription__card-name {
+  position: absolute;
+  top: 70.5px;
+  left: 32px;
+  transform: translateY(-50%);
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  background: linear-gradient(to right, #ffffff, #d1d5dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  height: 29px;
+  display: flex;
+  align-items: center;
+}
+
+/* Card Description */
+.subscription__card-description {
+  position: absolute;
+  top: 118.3px;
+  left: 32px;
+  transform: translateY(-50%);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: #99a1af;
+  margin: 0;
+  width: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 36.6px;
+}
+
+/* Card Price */
+.subscription__card-price {
+  position: absolute;
+  top: 213.69px;
+  left: 32px;
+  transform: translateY(-50%);
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(to right, #a78bfa, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  height: 59px;
+  display: flex;
+  align-items: center;
+}
+
+/* Card Period */
+.subscription__card-period {
+  position: absolute;
+  top: 225.19px;
+  left: 126.98px;
+  transform: translateY(-50%);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: #ffffff;
+  margin: 0;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card Buyout */
+.subscription__card-buyout {
+  position: absolute;
+  top: 251.19px;
+  left: 32px;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 99px;
+  height: 25px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #10b981;
+  margin: 0;
+  width: fit-content;
+}
+
+/* Card Features */
+.subscription__card-features {
+  position: absolute;
+  top: 300.19px;
+  left: 32px;
+  right: 32px;
+  bottom: 106px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subscription__card-features li {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20px;
+  padding-left: 32px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #e5e7eb;
+  display: flex;
+  align-items: center;
+}
+
+.subscription__card-features li:nth-child(1) {
+  top: 0;
+}
+
+.subscription__card-features li:nth-child(2) {
+  top: 36px;
+}
+
+.subscription__card-features li:nth-child(3) {
+  top: 72px;
+}
+
+.subscription__card-features li:nth-child(4) {
+  top: 108px;
+}
+
+.subscription__card-features li:nth-child(5) {
+  top: 144px;
+}
+
+.subscription__card-features li:nth-child(6) {
+  top: 180px;
+}
+
+.subscription__card-features li:nth-child(7) {
+  top: 216px;
+}
+
+.subscription__card-features li:nth-child(8) {
+  top: 252px;
+}
+
+.subscription__card-features li:nth-child(9) {
+  top: 288px;
+}
+
+.subscription__card-features li:nth-child(10) {
+  top: 324px;
+}
+
+.subscription__card-features li:nth-child(11) {
+  top: 360px;
+}
+
+.subscription__card-features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://www.figma.com/api/mcp/asset/183e3af1-649b-4a97-b770-c37fcce75422');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Professional card uses different checkmark icon */
+.subscription__card--popular .subscription__card-features li::before {
+  background-image: url('https://www.figma.com/api/mcp/asset/2456cf17-ee1d-45c1-9ca5-9c036f58203a');
+}
+
+/* Card Button */
+.subscription__card-button {
+  position: absolute;
+  left: 32px;
+  right: 32px;
+  top: 728.19px;
+  height: 42px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  font-family: 'Inter', sans-serif;
+  font-size: 14.6px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0;
+}
+
+.subscription__card-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.subscription__card-button--gradient {
+  background: linear-gradient(92.39deg, rgb(255, 59, 255) 0%, rgb(92, 36, 255) 100%);
+}
+
+.subscription__card-button--gradient:hover {
+  opacity: 0.9;
+  background: linear-gradient(92.39deg, rgb(255, 59, 255) 0%, rgb(92, 36, 255) 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .subscription__container {
+    padding: 0 40px;
+  }
+
+  .subscription__title {
+    left: 0;
+    width: 100%;
+    max-width: 796px;
+  }
+
+  .subscription__cards {
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .subscription {
+    padding: 80px 0;
+  }
+
+  .subscription__container {
+    min-height: auto;
+  }
+
+  .subscription__badge {
+    position: static;
+    transform: none;
+    margin: 0 auto 20px;
+  }
+
+  .subscription__title {
+    position: static;
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+
+  .subscription__subtitle {
+    position: static;
+    transform: none;
+    margin: 0 auto 60px;
+  }
+
+  .subscription__cards {
+    position: static;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .subscription__card {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .subscription {
+    padding: 60px 0;
+  }
+
+  .subscription__container {
+    padding: 0 20px;
+  }
+
+  .subscription__title {
+    font-size: 48px;
+  }
+
+  .subscription__subtitle {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .subscription__card-name {
+    font-size: 20px;
+  }
+
+  .subscription__card-price {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscription__title {
+    font-size: 36px;
+  }
+
+  .subscription__card-price {
+    font-size: 32px;
+  }
+}

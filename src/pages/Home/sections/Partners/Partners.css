@@ -1,7 +1,7 @@
 /* Partners Section */
 .partners {
   position: relative;
-  background-color: #f3f3f3;
+  background-color: #0d0d0d;
   padding: 50px 0;
 }
 
@@ -9,11 +9,30 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 84px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: relative;
   height: 64px;
+  overflow: hidden;
+}
+
+.partners__track {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  animation: scroll 40s linear infinite;
+  width: fit-content;
+}
+
+.partners__track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Individual Logo Containers */
@@ -22,11 +41,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   opacity: 0.7;
   transition: opacity 0.3s ease;
 }
 
 .partners__logo:hover {
+  opacity: 1;
+}
+
+/* Make logos visible on dark background */
+.partners__logo img {
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.partners__logo:hover img {
   opacity: 1;
 }
 
@@ -95,7 +126,10 @@
 @media (max-width: 1200px) {
   .partners__container {
     padding: 0 40px;
-    gap: 40px;
+  }
+
+  .partners__track {
+    gap: 100px;
   }
 
   .partners__logo {
@@ -110,10 +144,10 @@
 
   .partners__container {
     padding: 0 20px;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 30px;
-    justify-content: space-around;
+  }
+
+  .partners__track {
+    gap: 80px;
   }
 
   .partners__logo {
@@ -122,8 +156,8 @@
 }
 
 @media (max-width: 480px) {
-  .partners__container {
-    gap: 20px;
+  .partners__track {
+    gap: 60px;
   }
 
   .partners__logo {

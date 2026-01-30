@@ -1,0 +1,132 @@
+/* Partners Section */
+.partners {
+  position: relative;
+  background-color: #f3f3f3;
+  padding: 50px 0;
+}
+
+.partners__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 64px;
+}
+
+/* Individual Logo Containers */
+.partners__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.partners__logo:hover {
+  opacity: 1;
+}
+
+/* First Logo */
+.partners__logo--first {
+  width: 68px;
+  height: 66px;
+}
+
+.partners__logo--first .partners__logo-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  max-width: none;
+}
+
+/* Second Logo Group (two stacked logos) */
+.partners__logo--second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.partners__logo--second .partners__logo-img {
+  width: 61px;
+  height: 35px;
+  display: block;
+  max-width: none;
+}
+
+.partners__logo--second .partners__logo-merlines {
+  width: 87px;
+  height: 17px;
+  display: block;
+  max-width: none;
+}
+
+/* Third Logo */
+.partners__logo--third {
+  width: 137px;
+  height: 64px;
+}
+
+.partners__logo--third .partners__logo-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  max-width: none;
+}
+
+/* Fourth Logo */
+.partners__logo--fourth {
+  width: 56px;
+  height: 27px;
+}
+
+.partners__logo--fourth .partners__logo-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  max-width: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .partners__container {
+    padding: 0 40px;
+    gap: 40px;
+  }
+
+  .partners__logo {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    padding: 40px 0;
+  }
+
+  .partners__container {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 30px;
+    justify-content: space-around;
+  }
+
+  .partners__logo {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 480px) {
+  .partners__container {
+    gap: 20px;
+  }
+
+  .partners__logo {
+    transform: scale(0.7);
+  }
+}

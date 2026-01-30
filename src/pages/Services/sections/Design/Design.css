@@ -1,0 +1,34 @@
+.design {
+  padding: var(--spacing-2xl) 0;
+}
+
+.design__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-3xl);
+}
+
+.design__card {
+  padding: var(--spacing-md);
+  background-color: var(--color-dark);
+  min-height: 263px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.design__card-title {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-relaxed);
+  letter-spacing: var(--letter-spacing-tiny);
+  color: var(--color-gray-light);
+  font-weight: var(--font-weight-regular);
+}
+
+.design__card-description {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-relaxed);
+  letter-spacing: var(--letter-spacing-tiny);
+  color: var(--color-gray-light);
+  font-weight: var(--font-weight-regular);
+}

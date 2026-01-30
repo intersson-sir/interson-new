@@ -1,0 +1,24 @@
+.card {
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  transition: var(--transition-normal);
+}
+
+.card--default {
+  background-color: var(--color-dark);
+}
+
+.card--light {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+.card--bordered {
+  background-color: transparent;
+  border: 1px solid var(--color-gray);
+}
+
+.card--hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
